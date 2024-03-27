@@ -7,19 +7,20 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
   </head>
 
   <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Y</a>
+    <a class="navbar-brand" href="home">Y</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home">Home</a>
+          <a class="nav-link" aria-current="page" href="home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about">About</a>
@@ -31,6 +32,18 @@
     </div>
   </div>
 </nav>
-    <%= yield %>
+<main>
+  <%= yield %>
+</main>
+<div>
+<footer>
+        <p>Copyright &copy; 2024. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Reddit</a>
+            <a href="#">X</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+</div>
   </body>
 </html>

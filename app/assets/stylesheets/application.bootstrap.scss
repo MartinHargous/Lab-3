@@ -1,5 +1,59 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
-.text-center{
-    text-align: center;
+body {
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(34, 34, 51);
 }
+
+.navbar {
+    background-color: #2e2e42;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    background-color: #20242b;
+    border-radius: 5px;
+  }
+  
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-brand {
+    color: #ffffff;
+}
+
+footer {
+    background-color: rgb(29, 29, 47);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+main {
+    flex-grow: 1;
+}
+.form-group {
+  margin-bottom: 10px; 
+  margin-left: 40%;
+  margin-right: 40%;
+}
+.form-check {
+  display: flex;
+  justify-content: center; 
+}
+
+.btn {
+    display: block;
+    margin: 0 auto; 
+  }
+.modal-content {
+    background-color: #0a0a1b;
+  }
+.btn-close {
+    background-color: #ffffff;
+  }
